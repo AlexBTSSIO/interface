@@ -38,8 +38,8 @@ a{
 }
 .material-symbols-outlined{
     vertical-align: middle;
-    
 }
+
 /*fin reset*/
 :root{ /*palette couleur */
     --bgc-primary: #ffffff;
@@ -64,25 +64,26 @@ header h1::before{
     margin-right: .9rem;
     object-fit: contain;
 }
+
 nav{
-    
     text-align: center;
-   
     color: var(--color-text);
     background-color: var(--bgc-primary);
 }
+
 nav ul{
     width: 65rem;
     margin: 0 auto;
     font-size: 0;
 }
+
 nav ul li{
     display: inline-block;
     font-size: 1.6rem;
     text-transform: uppercase;
     width: calc(100% / 3);
-    
 }
+
 nav ul li a{
     display: block;
     text-align: center;
@@ -91,10 +92,7 @@ nav ul li a{
 }
 nav li:hover{
     background-color: var(--bgc-title);
-    
 }
-
-
 
 figure{
     position: relative;
@@ -130,15 +128,14 @@ figure figcaption p{
 figure figcaption ul{
     margin-bottom: 2rem;
 }
-    figure figcaption ul li{
+
+figure figcaption ul li{
         font-weight: 100;
         line-height: 2.5rem;
 }
 
 figure img{
     width: calc(100% / 2); /*modifier taille de l'image */
-   
-     
 }
 main figure button{
     position: absolute;
@@ -169,6 +166,26 @@ footer{
 
 }
 @media screen {
-    
-}
+    nav ul{
+display: flex;
+flex-direction: column;
+    }
+    nav ul li a{
+        line-height: 3rem;
+        text-align: left;
+    }
 
+    figure{
+        display: inline-block;
+        margin: 0;
+        border-radius: 0rem;
+    }
+    figure img{
+        width: 72%;
+        margin:auto 5rem;
+    }
+    main figure button{
+        position: relative;
+        margin: auto 6.6rem;
+    }
+}
