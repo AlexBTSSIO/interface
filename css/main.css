@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'roboto', sans-serif;
+    background-color: var(--color-bgc);
+    margin: 0;
+    color: black;
+    text-rendering: optimizeLegibility; 
+    
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    padding: 0rem;
+    margin: 0rem;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,ol,ul,li{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    vertical-align: middle;
+ 
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+*{box-sizing: border-box;
+}
+.material-symbols-outlined{
+    vertical-align: middle;
+    
+}
+/*fin reset*/
+:root{ /*palette couleur */
+    --bgc-primary: #ffffff;
+    --bgc-button:#DA6930;
+    --bgc-title: #DFE6E9;
+    --color-text: #000;
+    --color-bgc: #414141;
+}
+/* strong{
+    font-weight: bold;
+} */
+header h1{
+    line-height: 5.0rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-text);
+    background-color: var(--bgc-title);
+}
+header h1::before{
+    content: url(../favicon_io/favicon-32x32.png);
+    vertical-align: -0.5rem;
+    margin-right: .9rem;
+    object-fit: contain;
+}
+nav{
+    
+    text-align: center;
+   
+    color: var(--color-text);
+    background-color: var(--bgc-primary);
+}
+nav ul{
+    width: 65rem;
+    margin: 0 auto;
+    font-size: 0;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    width: calc(100% / 3);
+    
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    
+}
+nav li:hover{
+    background-color: var(--bgc-title);
+    
+}
+
+
+
+figure{
+    position: relative;
+    background-color: var(--bgc-primary); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 20rem auto;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    
+}
+
+figure figcaption{
+    padding-left: 1rem;
+    
+}
+
+figure figcaption h2{
+    font-size: medium;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+
+figure figcaption p{
+   font-weight: 300;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+figure figcaption ul{
+    margin-bottom: 2rem;
+}
+    figure figcaption ul li{
+        font-weight: 100;
+        line-height: 2.5rem;
+}
+
+figure img{
+    width: calc(100% / 2); /*modifier taille de l'image */
+   
+     
+}
+main figure button{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--bgc-button);
+    color: #ffffff;
+    text-align: center; 
+    width:  20rem;
+    line-height: 3.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    }
+
+main figure button .material-symbols-outlined{
+    color: #fff;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 4.5rem;
+    color: var(--color-text);
+    background-color: var(--bgc-primary);
+
+}
+@media screen {
+    
+}
+
