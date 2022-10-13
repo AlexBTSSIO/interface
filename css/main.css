@@ -192,7 +192,7 @@ flex-direction: column;
         position: relative;
     }
 }
-@media screen and (min-width:120rem)and (orientation:landscape){  
+@media screen /*and (minwidth:100rem)*/ and (orientation:landscape){  
     /*responsive ecran horizontale*/
     figure{
         width: inherit;
@@ -202,23 +202,11 @@ flex-direction: column;
         width: 100%;
         margin:0;
     }
-    nav ul{
-        width: 65rem;
-        margin: 0 auto;
-        font-size: 0;
-    }
-    
-    nav ul li{
-        display: inline-block;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        width: calc(100% / 3);
-    }
-    
-    nav ul li a{
-        display: block;
-        text-align: center;
-        line-height: 4rem;
-        
-    }
+   nav ul {
+   display: inline-block;
+   width: 65rem;
+   }
+   main figure button{
+    margin: auto 18rem;
+   }
 } 
