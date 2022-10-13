@@ -66,7 +66,6 @@ header h1::before{
 }
 
 nav{
-    text-align: center;
     color: var(--color-text);
     background-color: var(--bgc-primary);
 }
@@ -165,7 +164,7 @@ footer{
     background-color: var(--bgc-primary);
 
 }
-@media screen {
+@media screen and (max-width:80rem){ /*responsive ecran vertical*/
     nav ul{
 display: flex;
 flex-direction: column;
@@ -176,7 +175,7 @@ flex-direction: column;
     }
 
     figure{
-        display: inline-block;
+        display: block;
         margin: 0;
         border-radius: 0rem;
     }
@@ -189,3 +188,33 @@ flex-direction: column;
         margin: auto 6.6rem;
     }
 }
+@media screen and (min-width:120rem)and (orientation:landscape){  
+    /*responsive ecran horizontale*/
+    figure{
+        width: inherit;
+        margin: 0 auto;
+    }
+    figure img{
+        width: 100%;
+        margin:0;
+    }
+    nav ul{
+        width: 65rem;
+        margin: 0 auto;
+        font-size: 0;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        width: calc(100% / 3);
+    }
+    
+    nav ul li a{
+        display: block;
+        text-align: center;
+        line-height: 4rem;
+        
+    }
+} 
