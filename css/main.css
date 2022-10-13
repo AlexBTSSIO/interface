@@ -187,6 +187,9 @@ flex-direction: column;
         position: relative;
         margin: auto 6.6rem;
     }
+    footer{
+        position: relative;
+    }
 }
 @media screen and (min-width:120rem)and (orientation:landscape){  
     /*responsive ecran horizontale*/
