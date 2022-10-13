@@ -180,8 +180,9 @@ flex-direction: column;
         border-radius: 0rem;
     }
     figure img{
-        width: 72%;
-        margin:auto 5rem;
+        display:block;
+        width: 100%;
+        /* margin:auto 5rem; */
     }
     main figure button{
         position: relative;
